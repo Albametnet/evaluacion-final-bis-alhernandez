@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stysheets/RepoList.css';
 import { Link } from 'react-router-dom';
 
 
@@ -16,19 +17,19 @@ class RepoList extends React.Component {
           return (
             <div>
               <li className="repo__list-item">
-              <Link to={"/Repo"} >
-                  <div className= "repo__list-cover" >
+                <Link to={`/repo/${item.id}`}>
+                  <div className="repo__list-cover" >
                     <p>PITIFLU</p>
                   </div>
+                  <div className="repo__card">
+                    <h2 className="repo__list-name" ><a href={item.html_url}>{item.name}</a>
+                    </h2>
+                    <p className="repo__list-description">{item.description}</p>
+                    <p className="repo__list-language">
+                      <i className="fas fa-circle"></i>  {item.language}
+                    </p>
+                  </div>
                 </Link>
-                <div className="repo__card">
-                  <h2 className="repo__list-name" ><a href={item.html_url}>{item.name}</a>
-                  </h2>
-                  <p className="repo__list-description">{item.description}</p>
-                  <p className="repo__list-language">
-                    <i className="fas fa-circle"></i>  {item.language}
-                  </p>
-                </div>
               </li>
             </div>
           )

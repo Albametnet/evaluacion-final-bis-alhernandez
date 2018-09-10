@@ -54,11 +54,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
         <main>
           <Switch>
-          <Route exact path="/" render={() => <Home myLanguage={this.filterLanguage} myName={this.filterName} allRepos={this.state.repos} allLanguage={this.state.language} allName={this.state.name} />} />
-          <Route path="/Repo" render={props => <Repo allRepos={this.state.repos} />} />
+            <Route exact path="/" render={() => <Home
+              myLanguage={this.filterLanguage}
+              myName={this.filterName}
+              allRepos={this.state.repos}
+              allLanguage={this.state.language}
+              allName={this.state.name} />} />
+            <Route path="/repo/:id" render={props => <Repo
+              match={props.match}
+              repos={this.state.repos} />} />
           </Switch>
         </main>
       </div>
