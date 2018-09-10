@@ -54,7 +54,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <main>
+        <main className="App__main">
           <Switch>
             <Route exact path="/" render={() => <Home
               myLanguage={this.filterLanguage}

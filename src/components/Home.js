@@ -8,7 +8,7 @@ class Home extends React.Component {
     return (
       <div className="home">
         <header className="App-header">
-          <h1 className="App-title">Repos at Adalab on Github</h1>
+          <h1 className="App-title">Repos at Adalab in Github</h1>
         </header>
         <main className="home__main">
           <Search 

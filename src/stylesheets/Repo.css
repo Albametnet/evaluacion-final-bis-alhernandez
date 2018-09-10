@@ -1,0 +1,30 @@
+.info__repo-card {
+  list-style: none;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+  list-style: none;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.card__repo-name{
+  text-transform: capitalize;
+}
+.return__button {
+  height: 30px;
+  width: 100px;
+  background-color: lightgrey;
+  border: 1px solid darkgrey;
+  border-radius: 8px;
+  font-size: 26px;
+  margin: 0 auto;
+}
+.return__link{
+  text-decoration: none;
+  color: black;
+}
+.card_repo-description {
+  height: 20px;
+  color: black;
+}
