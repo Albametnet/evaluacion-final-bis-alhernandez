@@ -32,7 +32,6 @@ class Repo extends React.Component {
     return (
       <div className="repo__card-info">
         {this.showCard()}
-
       </div>
     );
   }
